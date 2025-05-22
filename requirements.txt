@@ -1,0 +1,22 @@
+# For core RAG and LLM functionalities
+langchain
+sentence-transformers
+faiss-cpu # For FAISS vector store (CPU version)
+# Or use chromadb instead of faiss-cpu if preferred:
+# chromadb
+
+# For LLM models (e.g., from Hugging Face)
+transformers
+torch # Required by sentence-transformers and transformers
+
+# For API development (FastAPI)
+fastapi
+uvicorn[standard] # For serving the FastAPI application
+
+# For PDF processing
+pypdf2 # A common library for PDF text extraction
+# Alternatively, pymupdf (fitz) is more robust if available and licensed appropriately
+# pymupdf
+
+# For development and testing
+pytest # For running unit tests
